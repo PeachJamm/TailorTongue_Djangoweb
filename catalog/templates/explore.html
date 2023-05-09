@@ -1,0 +1,30 @@
+{% extends "explore_base.html" %}
+
+{% block content %}
+  <h1>TailorTongue</h1>
+  <p>Welcome to TailorTongue, a website developed by <em>Gloria Tao</em>!</p>
+  <h2>Word you may like</h2>
+  <p>Word lists:</p>
+  <ul>
+ <table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in data %}
+    <tr>
+      <td>{{ row.word }}</td>
+      {% if row.defs %}
+            <td>{{ row.defs }}</td>
+        {% else %}
+            <td>no definition</td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+  </ul>
+{% endblock %}
