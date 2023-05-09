@@ -7,7 +7,7 @@ from django.http import JsonResponse
 from .models import WordInfo
 
 def index(request):
-    url = "https://api.datamuse.com/words?ml=greeting&md=d&max=5"
+    url = "https://api.datamuse.com/words?ml=ocean&md=d&max=5"
 
     # 发送API请求并获取响应
     response = requests.get(url)
