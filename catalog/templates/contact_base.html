@@ -1,0 +1,15 @@
+{% extends "explore_base.html" %}
+
+{% block title %}<title>Contact Author</title>{% endblock %}
+{% block content %}
+    {% block contactus %}
+        <h2>We value your opinion. Please leave your message</h2>
+    {% endblock %}
+    {% block contactform %}
+        <form action="{% url 'contact' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+        </form>
+    {% endblock %}
+{% endblock %}

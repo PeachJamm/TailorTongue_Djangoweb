@@ -1,0 +1,9 @@
+{% extends "contact_base.html" %}
+
+{% block contactus %}
+    <h2>Thank you for your message</h2>
+{% endblock %}
+{% block contactform %}
+    <p>Your message is:{{ message }}</p>
+    <p>Your email is:{{ sender }}</p>
+{% endblock %}

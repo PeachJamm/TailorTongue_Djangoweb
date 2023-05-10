@@ -3,7 +3,6 @@ from django.urls import reverse
 # Create your models here.
 
 
-
 class WordInfo(models.Model):
     """A typical class defining a model, derived from the Model class."""
 
