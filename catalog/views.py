@@ -10,7 +10,7 @@ from .models import WordInfo
 from .Forms import ContactForm
 
 def explore(request):
-    url = "https://api.datamuse.com/words?ml=ocean&md=d&max=5"
+    url = "https://api.datamuse.com/words?ml=tea&md=d&max=30"
 
     # 发送API请求并获取响应
     response = requests.get(url)
